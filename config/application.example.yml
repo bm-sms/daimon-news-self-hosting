@@ -1,0 +1,11 @@
+default: &default
+  site_title: Daimon
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default

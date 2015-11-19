@@ -16,4 +16,5 @@
 !/log/.keep
 /tmp
 
+/config/application.yml
 /app/assets/stylesheets/custom

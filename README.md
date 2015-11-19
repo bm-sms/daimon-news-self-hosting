@@ -10,13 +10,25 @@ $ bin/setup
 
 ## Customize
 
+### Style
+
 Put your css to `app/assets/stylesheets/custom` diretory.
 
-And please commit your files.
+And commit your files.
 
 ``` sh
 $ git add -f app/assets/stylesheets/custom
 $ git commit -m 'Update css'
+```
+
+### Setting
+
+Edit config: `config/application.yml`
+And commit your file:
+
+``` sh
+$ git add -f config/application.yml
+$ git commit -m 'Update config'
 ```
 
 ## Deploy
