@@ -10,6 +10,18 @@ $ bin/setup
 
 ## Customize
 
+### Setting
+
+First, edit database config: `config/database.yml`
+
+Next, edit application config: `config/application.yml`
+And commit your file:
+
+``` sh
+$ git add -f config/application.yml
+$ git commit -m 'Update config'
+```
+
 ### Style
 
 1. Put your css to `custom/stylesheets` diretory.
@@ -20,16 +32,6 @@ And commit your files.
 ``` sh
 $ git add -f app/assets
 $ git commit -m 'Update css'
-```
-
-### Setting
-
-Edit config: `config/application.yml`
-And commit your file:
-
-``` sh
-$ git add -f config/application.yml
-$ git commit -m 'Update config'
 ```
 
 ## Deploy
