@@ -3,7 +3,7 @@ class Admin::PostsController < ApplicationController
 
   # GET /admin/posts
   def index
-    @posts = Post.all
+    @posts = Post.order(:created_at => :desc)
   end
 
   # GET /admin/posts/1
