@@ -2,6 +2,6 @@
 
 system 'git remote | grep upstream > /dev/null || git remote add upstream git@github.com:bm-sms/daimon-news-self-hosting.git'
 system 'git fetch upstream'
-system 'git merge -m "Auto update with `git show -s --format=%h` upstream/master" upstream/master'
+system 'git merge -m "Auto update with `git show -s --format=%h upstream/master`" upstream/master'
 system 'bundle install'
 system 'bin/rake db:migrate'
