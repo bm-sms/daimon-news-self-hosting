@@ -6,6 +6,8 @@ gem 'cells'
 gem 'cells-erb'
 gem 'jquery-rails'
 gem 'pg'
+gem 'refile', require: 'refile/rails'
+gem 'refile-mini_magick'
 gem 'sass-rails'
 gem 'uglifier'
 
