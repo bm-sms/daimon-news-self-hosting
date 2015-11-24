@@ -23,4 +23,6 @@ ActiveRecord::Schema.define(version: 20151119023450) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "posts", ["created_at"], name: "index_posts_on_created_at", using: :btree
+
 end
