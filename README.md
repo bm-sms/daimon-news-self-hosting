@@ -12,7 +12,7 @@ $ bin/setup
 
 ### Style
 
-Put your css to `app/assets/stylesheets/custom` diretory.
+Put your css to `custom/stylesheets` diretory.
 
 And commit your files.
 
