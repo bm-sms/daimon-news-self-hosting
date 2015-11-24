@@ -18,7 +18,7 @@ $ bin/setup
 And commit your files.
 
 ``` sh
-$ git add -f custom
+$ git add -f app/assets
 $ git commit -m 'Update css'
 ```
 
