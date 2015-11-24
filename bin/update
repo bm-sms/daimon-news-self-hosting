@@ -3,3 +3,4 @@
 system "git remote | grep upstream > /dev/null || git remote add upstream git@github.com:bm-sms/daimon-news-self-hosting.git"
 system "git fetch upstream"
 system "git merge upstream/master"
+system "bundle install"
