@@ -1,5 +1,5 @@
 config = Rails.application.config_for(:application)
-required_keys = %w(site_title)
+required_keys = %w(service_title)
 
 missing_keys = required_keys - config.keys
 

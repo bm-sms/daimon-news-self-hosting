@@ -1,5 +1,5 @@
 default: &default
-  site_title: Daimon
+  service_title: Daimon
 
 production:
   <<: *default
