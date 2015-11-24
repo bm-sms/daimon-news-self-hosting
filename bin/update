@@ -4,3 +4,4 @@ system 'git remote | grep upstream > /dev/null || git remote add upstream git@gi
 system 'git fetch upstream'
 system 'git merge upstream/master'
 system 'bundle install'
+system 'bin/rake db:migrate'
