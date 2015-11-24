@@ -13,12 +13,16 @@
     <%= Rails.application.config.daimon.service_title %>
   </header>
 
-  <%= yield %>
+  <div class="main-container">
+    <main>
+      <%= yield %>
+    </main>
 
-  <aside>
-    <%= concept('posts/cell').(:recent_arrival, count: 5) %>
-    <%= concept('posts/cell').(:popular, count: 5) %>
-  </aside>
+    <aside class="sidebar">
+      <%= concept('posts/cell').(:recent_arrival, count: 5) %>
+      <%= concept('posts/cell').(:popular, count: 5) %>
+    </aside>
+  </div>
 
 </body>
 </html>
