@@ -15,5 +15,9 @@
 
   <%= yield %>
 
+  <aside>
+    <%= concept('recent_arrival_posts/cell').(:index, count: 5) %>
+  </aside>
+
 </body>
 </html>
