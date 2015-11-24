@@ -9,8 +9,10 @@
 <body>
 
   <header>
-    <%= image_tag 'custom/logo.png' %>
-    <%= Rails.application.config.daimon.service_title %>
+    <%= link_to root_path do %>
+      <%= image_tag 'custom/logo.png' %>
+      <%= Rails.application.config.daimon.service_title %>
+    <% end %>
   </header>
 
   <div class="main-container">
