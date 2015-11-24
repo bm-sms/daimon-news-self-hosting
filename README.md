@@ -12,12 +12,13 @@ $ bin/setup
 
 ### Style
 
-Put your css to `custom/stylesheets` diretory.
+1. Put your css to `custom/stylesheets` diretory.
+2. Replace service logo `custom/logo.png`.
 
 And commit your files.
 
 ``` sh
-$ git add -f app/assets/stylesheets/custom
+$ git add -f custom
 $ git commit -m 'Update css'
 ```
 
