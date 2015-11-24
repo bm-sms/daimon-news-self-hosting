@@ -5,8 +5,8 @@ gem 'rails', '4.2.5'
 gem 'cells'
 gem 'cells-erb'
 gem 'jquery-rails'
+gem 'pg'
 gem 'sass-rails'
-gem 'sqlite3'
 gem 'uglifier'
 
 group :development, :test do
