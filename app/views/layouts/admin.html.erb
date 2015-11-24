@@ -9,16 +9,10 @@
 <body>
 
   <header>
-    <%= image_tag 'custom/logo.png' %>
-    <%= Rails.application.config.daimon.service_title %>
+    <%= Rails.application.config.daimon.service_title %>(記事登録)
   </header>
 
   <%= yield %>
-
-  <aside>
-    <%= concept('posts/cell').(:recent_arrival, count: 5) %>
-    <%= concept('posts/cell').(:popular, count: 5) %>
-  </aside>
 
 </body>
 </html>

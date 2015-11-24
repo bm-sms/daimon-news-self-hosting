@@ -1,4 +1,6 @@
 class Admin::PostsController < ApplicationController
+  layout 'admin'
+
   # GET /admin/posts
   def index
     @posts = Post.all
