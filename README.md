@@ -41,3 +41,12 @@ For Heroku:
 $ heroku create
 $ git push heroku master
 ```
+
+## Update
+
+To follow update on original branch.
+Run the following script.
+
+``` sh
+$ bin/update
+```
