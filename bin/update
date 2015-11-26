@@ -6,9 +6,12 @@ set -x
 REPOSITORY_URL=git@github.com:bm-sms/daimon-news-self-hosting.git
 REMOTE_NAME=upstream
 MAIN_BRANCH=master
+PREVIOUS_VERSION=`cat VERSION`
 
 git remote | grep $REMOTE_NAME > /dev/null || git remote add $REMOTE_NAME $REPOSITORY_URL
 git fetch $REMOTE_NAME
 git merge --no-ff -m "Auto update with `git show -s --format=%h $REMOTE_NAME/$MAIN_BRANCH`" $REMOTE_NAME/$MAIN_BRANCH
 bundle install
 bin/rake db:migrate
+
+# NOTE: Use `$PREVIOUS_VERSION` if version specific migration is required.
