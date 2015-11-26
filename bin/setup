@@ -17,15 +17,7 @@ Dir.chdir APP_ROOT do
     system "cp config/database.example.yml config/database.yml"
   end
 
-  puts "\n== Copying default style =="
-  unless File.exist?("app/assets/stylesheets/custom/default.scss")
-    system "cp bootstrap/default.scss app/assets/stylesheets/custom/default.scss"
-  end
-
-  puts "\n== Copying default images =="
-  unless File.exist?("app/assets/images/custom/logo.png")
-    system "cp bootstrap/logo.png app/assets/images/custom/logo.png"
-  end
+  system "bin/apply-default-style"
 
   puts "\n== Copying config file =="
   unless File.exist?("config/application.yml")
