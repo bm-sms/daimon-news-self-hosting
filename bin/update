@@ -1,7 +1,14 @@
-#!/usr/bin/env ruby
+#!/bin/bash
 
-system 'git remote | grep upstream > /dev/null || git remote add upstream git@github.com:bm-sms/daimon-news-self-hosting.git'
-system 'git fetch upstream'
-system 'git merge --no-ff -m "Auto update with `git show -s --format=%h upstream/master`" upstream/master'
-system 'bundle install'
-system 'bin/rake db:migrate'
+set -e
+set -x
+
+REPOSITORY_URL=git@github.com:bm-sms/daimon-news-self-hosting.git
+REMOTE_NAME=upstream
+MAIN_BRANCH=master
+
+git remote | grep $REMOTE_NAME > /dev/null || git remote add $REMOTE_NAME $REPOSITORY_URL
+git fetch $REMOTE_NAME
+git merge --no-ff -m "Auto update with `git show -s --format=%h $REMOTE_NAME/$MAIN_BRANCH`" $REMOTE_NAME/$MAIN_BRANCH
+bundle install
+bin/rake db:migrate
