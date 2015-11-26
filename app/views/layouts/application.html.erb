@@ -8,22 +8,24 @@
 </head>
 <body>
 
-  <header>
-    <%= link_to root_path do %>
-      <%= image_tag 'custom/logo.png' %>
-      <%= Rails.application.config.daimon.service_title %>
-    <% end %>
-  </header>
+  <div class="container">
+    <header>
+      <%= link_to root_path do %>
+        <%= image_tag 'custom/logo.png' %>
+        <%= Rails.application.config.daimon.service_title %>
+      <% end %>
+    </header>
 
-  <div class="main-container">
-    <main>
-      <%= yield %>
-    </main>
+    <div class="main-container">
+      <main>
+        <%= yield %>
+      </main>
 
-    <aside class="sidebar">
-      <%= concept('posts/cell').(:recent_arrival, count: 5) %>
-      <%= concept('posts/cell').(:popular, count: 5) %>
-    </aside>
+      <aside class="sidebar">
+        <%= concept('posts/cell').(:recent_arrival, count: 5) %>
+        <%= concept('posts/cell').(:popular, count: 5) %>
+      </aside>
+    </div>
   </div>
 
 </body>
