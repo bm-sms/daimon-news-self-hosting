@@ -33,7 +33,7 @@ $ git commit -m 'Update config'
 And commit your files.
 
 ``` sh
-$ git add -f app/assets
+$ git add -f app/assets/{stylesheets,images}/custom
 $ git commit -m 'Update css'
 ```
 
