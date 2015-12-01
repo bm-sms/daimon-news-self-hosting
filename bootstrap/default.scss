@@ -1,6 +1,10 @@
+$base-color: #8c538c;
+$base-text-color: #5c5c5c;
+
 body {
   margin: auto;
-  border-top: solid 3px;
+  border-top: solid 5px $base-color;
+  color: $base-text-color;
 
   .container {
     width: 800px;
@@ -24,4 +28,8 @@ header {
   .sidebar {
     width: 20%;
   }
+}
+
+a {
+  color: $base-color;
 }
