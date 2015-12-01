@@ -52,6 +52,10 @@ $ heroku create
 $ git push heroku master
 ```
 
+## Write a post
+
+To visit `/admin`.
+
 ## Update
 
 To follow update on original branch.
