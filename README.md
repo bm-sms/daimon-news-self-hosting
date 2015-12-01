@@ -37,7 +37,7 @@ $ git add -f app/assets/{stylesheets,images}/custom
 $ git commit -m 'Update css'
 ```
 
-## Setup repository for customized style
+### Setup repository for customized style
 
 ``` sh
 $ git remote add origin <your repository URL>
