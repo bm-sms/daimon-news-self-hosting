@@ -3,7 +3,7 @@
 ## Setup
 
 ``` sh
-$ git clone git@github.com:bm-sms/daimon-news-self-hosting.git
+$ git clone --origin upstream git@github.com:bm-sms/daimon-news-self-hosting.git:upstream
 $ cd daimon-news-self-hosting
 ```
 
