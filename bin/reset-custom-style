@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+puts "\n== Reset custom style =="
+system "rm -f app/assets/stylesheets/custom/default.scss"
+system "rm -f app/assets/images/custom/logo.png"
+
+system "bin/apply-default-style"
