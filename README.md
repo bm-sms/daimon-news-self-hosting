@@ -28,7 +28,7 @@ $ git commit -m 'Update config'
 ### Style
 
 1. Put your css to `custom/stylesheets` diretory.
-2. Replace service logo `custom/logo.png`.
+2. Replace service logo `custom/images/logo.png`.
 
 And commit your files.
 
