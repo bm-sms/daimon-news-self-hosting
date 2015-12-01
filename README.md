@@ -5,6 +5,11 @@
 ``` sh
 $ git clone git@github.com:bm-sms/daimon-news-self-hosting.git
 $ cd daimon-news-self-hosting
+```
+
+Copy and setup database config `config/database.yml` from `config/database.example.yml`.
+
+``` sh
 $ bin/setup
 ```
 
@@ -12,9 +17,7 @@ $ bin/setup
 
 ### Setting
 
-First, edit database config: `config/database.yml`
-
-Next, edit application config: `config/application.yml`
+Edit application config: `config/application.yml`
 And commit your file:
 
 ``` sh
